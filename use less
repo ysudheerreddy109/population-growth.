@@ -1,0 +1,159 @@
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    color: #fff;
+    padding: 1rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    color: #00c853;
+    text-decoration: none;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-buttons .btn-login,
+.header-buttons .btn-signup {
+    margin-left: 1rem;
+    background-color: #00c853;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-login {
+    background-color: #444;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+}
+
+
+}
+
+.hero p {
+    margin: 1rem 0;
+    color: #666;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+/* Main Content */
+.content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.article-section {
+    margin-bottom: 2rem;
+}
+
+.article-section h2 {
+    color: #333;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-section p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.article-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: #00c853;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cta h3 {
+    font-size: 1.75rem;
+}
+
+.cta p {
+    margin: 1rem 0;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #00c853;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer .footer-links {
+    margin-top: 1rem;
+}
+
+.footer .footer-links a {
+    color: #00c853;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}

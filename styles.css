@@ -1,0 +1,296 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.header-logo img {
+    height: 50px;
+}
+
+.header-nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.donate-button {
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.article-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.article-header img {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.article-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.download-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.newsletter, .footer {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter form input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.more-readings {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.more-readings .reading-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reading-item {
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.reading-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer form {
+    
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+.footer input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer button {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #343a40;
+    border: none;
+    border-radius: 5px;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.header-logo img {
+    height: 50px;
+}
+
+.header-nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.donate-button {
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Image Links Section */
+.image-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image-link {
+    text-align: center;
+}
+
+.image-link img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* Focused on Impact Section */
+.impact {
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat {
+    width: 22%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Global Impact Section */
+.global-impact {
+    padding: 20px;
+    background-color: #004d80;
+    color: #fff;
+    text-align: center;
+}
+
+.global-impact button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Vencer el Miedo Section */
+.vencer-el-miedo {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.vencer-el-miedo form input,
+.vencer-el-miedo form button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.vencer-el-miedo button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Goals Section */
+.goals {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.goals button {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Entertainment Stats Section */
+.entertainment-stats {
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.entertainment-stats .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Vision Section */
+.vision {
+    padding: 20px;
+    background-color: #004d80;
+    color: #fff;
+    text-align: center;
+}
+
+.vision button {
+    padding: 10px 20px;
+    background-color: #4CAF50

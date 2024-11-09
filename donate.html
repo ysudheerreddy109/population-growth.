@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+body {
+
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+}
+
+.header .nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.donate-button {
+  background-color: #4CAF50;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.main-banner {
+  background: url('https://example.com/banner-image.jpg') no-repeat center center;
+  background-size: cover;
+ 
+  text-align: center;
+  padding: 50px;
+}
+
+.main-donate-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.donation-form {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.donation-form h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.frequency-options, .donation-amounts, .user-info, .payment-method {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.frequency-btn, .amount-btn, .submit-btn {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.frequency-btn.active, .amount-btn.active, .submit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.custom-amount, .user-info input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.newsletter-signup {
+  display: flex;
+  gap: 10px;
+}
+
+
+</style>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Population Media Center</div>
+    <nav class="nav">
+      <a href="donate.html" class="donate-button">Donate</a>
+    </nav>
+  </header>
+
+  <!-- Main Banner -->
+  <section class="main-banner">
+    <div class="banner-text">
+      <a href="#donate-form" class="main-donate-button">Make Your Donation Today</a>
+    </div>
+  </section>
+
+  <!-- Donation Form -->
+  <section id="donate-form" class="donation-form">
+    <form>
+      <!-- Frequency -->
+      <h2>Frequency</h2>
+      <div class="frequency-options">
+        <button type="button" class="frequency-btn active" data-frequency="one-time">One Time</button>
+        <button type="button" class="frequency-btn" data-frequency="monthly">Monthly</button>
+      </div>
+
+      <!-- Donation Amount -->
+      <h2>Donation Amount</h2>
+      <div class="donation-amounts">
+        <button type="button" class="amount-btn">rs:1000</button>
+        <button type="button" class="amount-btn active">rs:1500</button>
+        <button type="button" class="amount-btn">rs:2000</button>
+        <button type="button" class="amount-btn">rs:2500</button>
+        <button type="button" class="amount-btn">rs:3000</button>
+        <button type="button" class="amount-btn">rs:5000</button>
+        <input type="number" class="custom-amount" placeholder="Enter Custom Amount">
+      </div>
+
+      <!-- User Information -->
+      <h2>Your Information</h2>
+      <div class="user-info">
+        <input type="text" placeholder="First Name *" required>
+        <input type="text" placeholder="Last Name *" required>
+        <input type="email" placeholder="Email *" required>
+        <input type="text" placeholder="Street Address *" required>
+        <input type="text" placeholder="Address Line 2">
+        <input type="text" placeholder="City *" required>
+        <input type="text" placeholder="State / Province / Region *" required>
+        <input type="text" placeholder="ZIP / Postal Code *" required>
+        <input type="text" placeholder="Country *" required>
+      </div>
+
+      <!-- Payment Information -->
+      <h2>Payment Information</h2>
+      <div class="payment-method">
+        <label><input type="radio" name="payment" checked> Credit Card</label>
+        <label><input type="radio" name="payment"> Netbanking</label>
+      </div>
+      <input type="text" placeholder="Card Number">
+      
+      <label>
+        <input type="checkbox">
+        I'd like to help cover processing fees on my donation
+      </label>
+      <button type="submit" class="submit-btn">Donate Now</button>
+    </form>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <h2 id="hlo">Join Us in Promoting a Sustainable World</h2>
+    <form>
+        <input type="email" placeholder="Email">
+        <button type="submit">Submit</button>
+    </form>
+    <p id="hlo1">&copy; 2024 Population growth media center</p>
+</footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const frequencyBtns = document.querySelectorAll(".frequency-btn");
+    const amountBtns = document.querySelectorAll(".amount-btn");
+  
+    frequencyBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        frequencyBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      });
+    });
+  
+    amountBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        amountBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      });
+    });
+  });
+  </script>
+</body>
+</html>
